@@ -1,0 +1,16 @@
+[Unit]
+Description=Watch Livelo Points
+
+[Service]
+ExecStart=/usr/bin/python3 livelo.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+
+
+# Copy to:
+# sudo nano /etc/systemd/system/livelo.service
+
+# sudo systemctl start livelo
+# sudo systemctl enable livelo
